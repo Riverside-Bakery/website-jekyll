@@ -1,0 +1,22 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "typography";
+@import "header";
+
+body {
+    background: #f2e7d1;
+    font-family: allerregular, Arial, sans-serif;
+    color: 333333;
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+    padding: 7px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 7px 7px #1c1a19;
+}

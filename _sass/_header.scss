@@ -1,0 +1,65 @@
+header {
+    display: block;
+    
+    #header-image {
+        background: url('/assets/images/background_poppy.jpg') center;
+        background-size: cover;
+        height: 575px;
+    }
+
+    h1 {
+        font-family: allerregular, serif;
+        font-size: 3em;
+        font-weight: normal;
+        margin: 0 0 0 10px;
+        color: black;
+        text-align:center;
+        padding:5px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-family: anudawregular;
+        font-size: 1em;
+        margin-top: 100px;
+        text-align: center;
+        color: white;
+        font-weight: normal;
+    }
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    img {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 40px;  
+    }
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height:40px;
+    margin: 10px 100px 0 100px;
+
+    a {
+        font-family: anudawregular, serif;
+        font-size: 1.3em;
+        color: #c96300;
+        padding-bottom: 3px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #760001;
+        border-bottom: 3px solid #760001;
+    }
+}
