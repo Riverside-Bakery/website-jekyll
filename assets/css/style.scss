@@ -5,6 +5,7 @@
 
 @import "typography";
 @import "header";
+@import "footer";
 
 body {
     background: #f2e7d1;
@@ -16,6 +17,7 @@ body {
 {
     width: 1200px;
     margin: auto;
+    margin-bottom: 100px;
     padding: 7px;
     background-color: #f5f5f5;
     box-shadow: 0px 7px 7px #1c1a19;
