@@ -1,3 +1,53 @@
 ---
-layout: default
+layout: body
 ---
+<div>
+    <div class="about-snippet">
+        <h4>
+            "We’re a small-scale sourdough bakery based in Stirling, Scotland, who make tasty and nutritious breads and pastries by hand and deliver them to local pick up points by
+            bicycle."
+        </h4>
+    </div>
+</div>
+
+<div>
+    <h2>Getting your weekly bread:</h2>
+
+    <p>
+        Every Monday morning we publish a newsletter (subscribe below) containing the week’s bread and pastry menu (it changes!) as well as some updates on what’s been going on at
+        the bakery.
+    </p>
+    <p>
+        In the newsletter you’ll find all you need to know to order and collect your bread.
+        We also share the newsletter on all our social media channels, or you can simply click on the latest one below.
+    </p>
+
+
+    {% include subscribe.html sub-style="left" %}
+</div>
+<div>
+    <h2>Newsletters:</h2>
+    <style type="text/css">
+        .display_archive {
+            font-family: allerregular, arial, verdana;
+            font-size: 14px;
+        }
+
+        .campaign {
+            line-height: 125%;
+            margin: 5px;
+        }
+    </style>
+    <script language="javascript" src="//wordpress.us10.list-manage.com/generate-js/?u=7c6022ca416d6a5c1f233db67&fid=28089&show=10" type="text/javascript"></script>
+</div>
+
+{% contentfor sidebar %}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="RaaIf8Kt"></script>
+<div class="fb-page" data-href="https://www.facebook.com/RiversideBakeryCIC/" data-tabs="timeline, events" data-width="300" data-height="800" data-small-header="false"
+    data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+    <blockquote cite="https://www.facebook.com/RiversideBakeryCIC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RiversideBakeryCIC/">
+            Riverside Bakery CIC</a>
+    </blockquote>
+</div>
+{% endcontentfor %}
