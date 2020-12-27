@@ -10,7 +10,7 @@ layout: default
         return response.text();
     }
 
-    fetchNewsletters('https://us10.campaign-archive.com/home/?u=7c6022ca416d6a5c1f233db67&id=9e1180f48d').then(
+    fetchNewsletters('https://cors-anywhere.herokuapp.com/us10.campaign-archive.com/home/?u=7c6022ca416d6a5c1f233db67&id=9e1180f48d').then(
         response => {
             const parser = new DOMParser();
             const page = parser.parseFromString(response, 'text/html');
