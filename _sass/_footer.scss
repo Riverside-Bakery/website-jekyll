@@ -35,15 +35,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-#social,
-#address,
-#contact {
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
+    justify-content: space-evenly;
 }
 
 #partners {

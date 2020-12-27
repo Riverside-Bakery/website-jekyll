@@ -1,10 +1,15 @@
 .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    // display: flex;
+    // flex-direction: row;
+    grid-template-areas: 
+        "content sidebar"
+        "below below";
     margin: 25px 50px 0px 50px;
 }
 
 .content {
+    grid-area: content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -26,6 +31,7 @@
 }
 
 .sidebar {
+    grid-area: sidebar;
     text-align: justify;
     float: right;
     background-color: #ebe1c2;
@@ -34,7 +40,6 @@
     padding: 10px;
     color: black;
     font-size: 0.9em;
-    width: 400px;
     height: auto;
 
     .slim {
@@ -60,7 +65,12 @@
     }
 }
 
+.below {
+    grid-area: below;
+}
+
 .newsletters {
+    text-align: center;
     a:hover {
         border-bottom: 1px solid;
     }

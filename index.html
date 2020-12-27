@@ -21,13 +21,28 @@ layout: body
         In the newsletter you’ll find all you need to know to order and collect your bread.
         We also share the newsletter on all our social media channels, or you can simply click on the latest one below.
     </p>
-
-
+    
     {% include subscribe.html sub-style="left" %}
     {% include social.html %}
+
+    <p>
+        Orders close on Tuesday afternoon to allow for enough time to get that dough fermentation going!
+    </p>
+    <p>
+        You can also find us at <a href="http://www.stirlingfarmersmarket.co.uk/">Stirling Farmer’s Market</a> once a month – do come by, say hi, find out more and get a loaf!
+    </p>
+    <p>
+        We also supply some local shops – again, you will find all the information on how to track down the loaves in our newsletter and social media posts.</br></br>
+        Loaves of love,</br>
+        Your bakers
+    </p>
 </div>
-{% include newsletters.html %}
+
 
 {% contentfor sidebar %}
 {% include facebook_timeline.html %}
+{% endcontentfor %}
+
+{% contentfor below %}
+{% include newsletters.html %}
 {% endcontentfor %}
