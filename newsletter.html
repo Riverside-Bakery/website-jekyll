@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<script>
+    const fetchNewsletters = async (url) => {
+        const response = await fetch(url, {
+            method: 'GET',
+        });
+        return response.text();
+    }
+
+    fetchNewsletters('https://us10.campaign-archive.com/home/?u=7c6022ca416d6a5c1f233db67&id=9e1180f48d').then(
+        response => {
+            const parser = new DOMParser();
+            const page = parser.parseFromString(response, 'text/html');
+            const campaign = page.querySelector("div.display_archive li.campaign a");
+            document.getElementById('mc-frame').setAttribute('src', campaign.href);
+        }
+    ).catch(console.error("Failed to fetch Mailchimp newsletter"));
+
+</script>
+
+<h1 style="text-align: center;">Current newsletter</h1>
+<div class="iframe-container">
+    <iframe id="mc-frame" scrolling="no">
+    </iframe>
+</div>
+    
