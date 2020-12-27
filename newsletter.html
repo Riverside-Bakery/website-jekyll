@@ -47,7 +47,7 @@
             const parser = new DOMParser();
             const page = parser.parseFromString(response, 'text/html');
             const campaign = page.querySelector("div.display_archive li.campaign a");
-            document.getElementById('mc-frame').setAttribute('src', campaign.href);
+            document.getElementById('mc-frame').setAttribute('src', campaign.href.replace('http', 'https'));
         }
     ).catch(console.error("Failed to fetch Mailchimp newsletter"));
 
