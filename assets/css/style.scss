@@ -8,6 +8,7 @@
 @import "subscribe";
 @import "header";
 @import "footer";
+@import "social";
 
 body {
     background: #f2e7d1;
@@ -18,10 +19,6 @@ body {
 a {
     text-decoration: none;
     color: #98001a;
-}
-
-a:hover {
-    border-bottom: 1px solid;
 }
 
 p {
