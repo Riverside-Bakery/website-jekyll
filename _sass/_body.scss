@@ -70,8 +70,14 @@
 }
 
 .newsletters {
+    margin-top: 40px;
     text-align: center;
     a:hover {
         border-bottom: 1px solid;
+    }
+
+    .campaign:first-child {
+        font-size: 20px;
+        margin-bottom: 16px;
     }
 }
